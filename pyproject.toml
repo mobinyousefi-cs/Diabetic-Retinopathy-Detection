@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diabetic-retinopathy-detector"
+version = "0.1.0"
+description = "Automatic screening of diabetic retinopathy using deep learning (PyTorch)."
+readme = "README.md"
+authors = [
+    { name = "Mobin Yousefi", email = "" },
+]
+license = { text = "MIT" }
+requires-python = ">=3.9"
+keywords = ["deep-learning", "pytorch", "medical-imaging", "diabetic-retinopathy"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# Keep the dependencies in sync with requirements.txt
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "torch",
+    "torchvision",
+    "Pillow",
+    "tqdm",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mobinyousefi-cs/diabetic-retinopathy-detector"
+"Source" = "https://github.com/mobinyousefi-cs/diabetic-retinopathy-detector"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

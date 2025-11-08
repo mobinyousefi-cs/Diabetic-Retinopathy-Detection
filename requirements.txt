@@ -1,0 +1,10 @@
+# requirements.txt
+
+numpy
+pandas
+scikit-learn
+torch
+torchvision
+Pillow
+tqdm
+pytest
